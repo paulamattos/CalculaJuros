@@ -13,7 +13,7 @@ namespace CalculaJuros.Controllers
         }
 
         [HttpGet]
-        public object ShowMeTheCode()
+        public UrlDTO ShowMeTheCode()
         {
             return _aplicShowMeTheCode.ShowMeTheCode();
         }

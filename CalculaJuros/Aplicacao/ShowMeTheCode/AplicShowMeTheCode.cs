@@ -15,8 +15,8 @@ namespace CalculaJuros.Aplicacao.ShowMeTheCode
         {
             return new UrlDTO
             {
-                UrlGitTaxaJuros = _configuration.GetValue<string>("UrlGitTaxaJuros"),
-                UrlGitCalcJuros = _configuration.GetValue<string>("UrlGitCalcJuros")
+                UrlGitTaxaJuros = _configuration["UrlGitTaxaJuros"],
+                UrlGitCalcJuros = _configuration["UrlGitCalcJuros"]
             };
         }
     }
