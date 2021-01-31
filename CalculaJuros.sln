@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1340
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaJuros", "CalculaJuros\CalculaJuros.csproj", "{20533231-3155-498B-9CEA-B133D11EB777}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros", "CalculaJuros\CalculaJuros.csproj", "{20533231-3155-498B-9CEA-B133D11EB777}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaJuros.Test", "CalculaJuros.Test\CalculaJuros.Test.csproj", "{1AB26956-F471-437F-9A90-D814FC23D4E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{20533231-3155-498B-9CEA-B133D11EB777}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20533231-3155-498B-9CEA-B133D11EB777}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20533231-3155-498B-9CEA-B133D11EB777}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AB26956-F471-437F-9A90-D814FC23D4E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB26956-F471-437F-9A90-D814FC23D4E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB26956-F471-437F-9A90-D814FC23D4E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB26956-F471-437F-9A90-D814FC23D4E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
