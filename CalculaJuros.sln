@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1340
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaJuros", "CalculaJuros\CalculaJuros.csproj", "{20533231-3155-498B-9CEA-B133D11EB777}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20533231-3155-498B-9CEA-B133D11EB777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20533231-3155-498B-9CEA-B133D11EB777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20533231-3155-498B-9CEA-B133D11EB777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20533231-3155-498B-9CEA-B133D11EB777}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C075B31C-7DF4-4A50-B2BB-97221017AACD}
+	EndGlobalSection
+EndGlobal
