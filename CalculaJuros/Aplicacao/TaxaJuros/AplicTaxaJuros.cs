@@ -29,7 +29,7 @@ namespace CalculaJuros.Aplicacao.TaxaJuros
 
         private string GetUrl()
         {
-            return _configuration.GetValue<string>("UrlTaxaJuros");
+            return _configuration["UrlTaxaJuros"];
         }
     }
 }
