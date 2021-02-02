@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace CalculaJuros
 {
@@ -32,7 +33,7 @@ namespace CalculaJuros
             services.AddScoped<IAplicTaxaJuros, AplicTaxaJuros>();
             services.AddScoped<IAplicShowMeTheCode, AplicShowMeTheCode>();
             services.AddHttpClient();
-            services.AddSwaggerGen(p => p.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info()));
+            services.AddSwaggerGen(p => p.SwaggerDoc("v1", new Info()));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -40,9 +41,13 @@ namespace CalculaJuros
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
-            {
+            {                
                 app.UseSwagger();
-                app.UseSwaggerUI(p => p.SwaggerEndpoint("/swagger/v1/swagger.json", "teste v1"));
+                app.UseSwaggerUI(p =>
+                {
+                    p.SwaggerEndpoint("/swagger/v1/swagger.json", "Calcula juros");
+                    p.ValidatorUrl(null);
+                });
                 app.UseDeveloperExceptionPage();
             }
             else
