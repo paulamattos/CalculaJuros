@@ -11,12 +11,7 @@ namespace CalculaJuros.Test.Integracao
         private TestServer _server;
 
         public TestContext()
-        {
-            var webBuilder = new WebHostBuilder().UseStartup<Startup>();
-            webBuilder.ConfigureServices(p =>
-            {
-
-            });
+        {            
             _server = new TestServer(new WebHostBuilder().UseStartup<Startup>()
                                                          .UseConfiguration(new ConfigurationBuilder()
                                                          .AddJsonFile("appsettings.json")
